@@ -27,12 +27,13 @@ function UserData() {
               <img src={movie.image} className="card-img-top" alt={movie.Name} />
               <div className="card-body">
                 <h5 className="card-title">{movie.Name}</h5>
-                <p className="card-text">{movie.about}</p>
                 <p className="card-text">Date: {movie.date}</p>
                 <p className="card-text">Genre: {movie.genre}</p>
                 {movie.actors && <p className="card-text">Actors: {movie.actors.join(', ')}</p>}
-              </div>
+              </div>                                     
             </div>
+            {/* <p className="card-text">{movie.about}</p> */}
+            
           </div>
         ))}
       </div>
